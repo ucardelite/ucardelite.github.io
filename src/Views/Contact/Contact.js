@@ -39,7 +39,7 @@ function Contact() {
                 <div style={{ fontSize: 14 }} className="mb-3">
                   Call us
                 </div>
-                +123123213
+                +27826882710
               </div>
             }
           >
@@ -47,7 +47,7 @@ function Contact() {
               <AiOutlinePhone className="social-icon" />
             </div>
           </Tooltip>
-          <a href="https://api.whatsapp.com/send?phone=15551234567" target="_blank">
+          <a href="https://api.whatsapp.com/send?phone=+27826882710" target="_blank">
             <div className="whatsapp-icon-container d-flex align-items-center justify-content-center">
               <FaWhatsapp className="whatsapp-icon" size={24} />
             </div>
