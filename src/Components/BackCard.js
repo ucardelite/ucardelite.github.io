@@ -16,7 +16,7 @@ function BackCard({ data, background }) {
           <div className="back-seal mr-4"></div>
           <div className="back-seal-text">777</div>
         </div>
-        <div className="authorize-sig">Authorized Signature & Not Valid Unless Sign</div>
+        <div className="authorize-sig">Authorized Signature    Not Valid Unless Signed</div>
       </div>
       <div className="text-center position-absolute" style={{ top: 160, left: 20 }}>
         {data && data.cardNumberPosition === "back" && (
