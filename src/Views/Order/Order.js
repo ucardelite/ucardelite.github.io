@@ -45,7 +45,7 @@ function Order() {
   return (
     <div className="row order-container">
       <div className="col-md-5">
-        {/* <div className="bg-white p-3 align-items-center mb-3">
+        <div className="bg-white p-3 align-items-center mb-3">
           <TextField
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -59,7 +59,7 @@ function Order() {
               <Button onClick={handleCardsLookup}>{buttonVal}</Button>
             </div>
           </div>
-        </div> */}
+        </div>
 
         <FrontCard data={customCard} background={activeBackground || { image: M3 }} />
         <BackCard data={customCard} background={activeBackground || { image: M3 }} />
