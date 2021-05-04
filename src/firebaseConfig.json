@@ -1,9 +1,10 @@
 {
-  "apiKey": "AIzaSyD6TIB0HND4wEjoAbFRdvMMaW60ToOYIdc",
-  "authDomain": "cards-12073.firebaseapp.com",
-  "databaseURL": "https://cards-12073-default-rtdb.firebaseio.com",
-  "projectId": "cards-12073",
-  "storageBucket": "cards-12073.appspot.com",
-  "messagingSenderId": "175123527897",
-  "appId": "1:175123527897:web:79cecfa92a694fa6b326c8"
+  "apiKey": "AIzaSyCmA4NpK0QDR6xBvT4uz9M1EzUQQif6PtM",
+  "authDomain": "ucardelite-a9084.firebaseapp.com",
+  "databaseURL": "https://ucardelite-a9084-default-rtdb.firebaseio.com",
+  "projectId": "ucardelite-a9084",
+  "storageBucket": "ucardelite-a9084.appspot.com",
+  "messagingSenderId": "1060392047574",
+  "appId": "1:1060392047574:web:0932507aba16c50bd98a77",
+  "measurementId": "G-CNYPLPQP8H"
 }
