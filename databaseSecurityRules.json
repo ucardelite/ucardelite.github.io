@@ -1,0 +1,24 @@
+{
+  "rules": {
+    "admin": {
+      ".read": true,
+      ".write": "root.child('admin').val() === null"
+    },
+    "metals": {
+      ".read": true,
+      ".write": "root.child('admin').val() === auth.uid"
+    },
+    "borders": {
+      ".read": true,
+      ".write": "root.child('admin').val() === auth.uid"
+    },
+    "discounts": {
+      ".read": true,
+      ".write": "root.child('admin').val() === auth.uid"
+    },
+    "igAccessToken": {
+      ".read": true,
+      ".write": true
+    }
+  }
+}

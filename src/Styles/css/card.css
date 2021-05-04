@@ -1,0 +1,115 @@
+.card-container {
+  width: 98%;
+  min-height: 300px;
+  border-radius: 20px;
+  position: relative;
+  margin-bottom: 20px;
+  box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%), 0px 3px 4px 0px rgb(0 0 0 / 14%),
+    0px 1px 8px 0px rgb(0 0 0 / 12%);
+}
+
+.card-container img {
+  display: none;
+}
+
+.card-container img[src] {
+  display: block;
+  user-select: none;
+}
+
+.card-portion {
+  width: 100%;
+  height: 40px !important;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.small-chip {
+  width: 63.92px;
+  height: 47px;
+  background-color: lightcyan;
+  display: block;
+  border-radius: 10px;
+  position: relative;
+}
+
+.cardholder-name {
+  font-size: 1.6rem;
+}
+
+.card-type-icon {
+  font-size: 60px;
+  margin-right: 5px;
+}
+
+.card-number {
+  font-size: 1.5rem;
+}
+
+.card-valid-number {
+  font-size: 1rem;
+}
+
+/* Back Card */
+.back-card-scan {
+  height: 50px;
+  width: 100%;
+  background-color: #333 !important;
+  color: lightcyan;
+}
+
+.back-seal-container {
+  width: 50%;
+}
+
+.authorize-sig {
+  font-size: 0.6rem;
+  color: #fff;
+  text-align: center;
+  width: 225px;
+}
+
+.back-seal {
+  width: 225px;
+  height: 50px;
+  background-color: #ffffff;
+}
+
+.back-seal-text {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.back-number {
+  font-size: 1.4rem;
+}
+
+.back-valid-date {
+  font-size: 0.6rem;
+}
+
+.back-bankname-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bankname-left {
+  width: 70%;
+}
+
+.back-logo {
+  color: #fff;
+  text-align: left;
+}
+
+.back-notice {
+  font-size: 0.6rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .card-container {
+    width: 100%;
+    margin-left: 5px;
+  }
+}

@@ -1,0 +1,23 @@
+.dropzone-container {
+  height: 153px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none !important;
+  cursor: pointer;
+}
+
+.add-image-icon {
+  color: #dadada;
+  font-size: 80px !important;
+  margin: auto;
+}
+
+.add-image-icon:hover {
+  color: white;
+}
+
+.add-image-text {
+  color: #dadada;
+}

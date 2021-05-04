@@ -1,0 +1,80 @@
+.admin-menu {
+  background: black;
+  max-width: 308px;
+  width: 100%;
+}
+
+.admin-menu-item {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.bg-yellow {
+  background: #ffbd1b;
+}
+
+.text-yellow {
+  color: #ffbd1b;
+}
+
+.admin-menu-btn {
+  border: 1px solid #ffbd1b !important;
+  border-radius: 7px !important;
+  outline: none !important;
+  color: white !important;
+  display: flex !important;
+  height: 44px !important;
+  max-width: 198px;
+  width: 100%;
+  font-size: 18px !important;
+  text-decoration: none !important;
+}
+
+.admin-menu-btn:hover {
+  background-color: #ffbd1b !important;
+}
+
+.admin-page-title {
+  font-size: 41px;
+  color: white;
+}
+
+.resources-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(223px, 1fr));
+  grid-gap: 20px;
+}
+
+.discounts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  grid-gap: 20px;
+}
+
+.resource-prop-label {
+  text-transform: uppercase;
+  color: #717171;
+  font-size: 12px;
+}
+
+.resource-prop {
+  width: 100%;
+  padding: 0 5px;
+  font-size: 16px;
+  color: white;
+  background: #222222;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+}
+
+.resource-prop:disabled {
+  background: transparent;
+  padding: 0;
+}
+
+.admin-navbar {
+  background: black;
+  position: fixed;
+  z-index: 100;
+}

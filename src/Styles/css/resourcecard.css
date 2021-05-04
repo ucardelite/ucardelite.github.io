@@ -1,0 +1,49 @@
+.resource-card {
+  height: 231px;
+  max-width: 100vw;
+  background: black;
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.resource-img {
+  height: 153px;
+  border-radius: 18px;
+  background-position: center;
+}
+
+.resource-outlined-btn {
+  border: 1px solid rgb(118, 118, 118) !important;
+  color: #767676 !important;
+  border-radius: 4px !important;
+  height: 27px !important;
+  outline: none !important;
+  width: 63px !important;
+  flex-shrink: 0;
+  display: flex !important;
+}
+
+.resource-outlined-btn:hover {
+  background-color: rgba(118, 118, 118, 0.376) !important;
+  color: white !important;
+}
+
+.loader-container {
+  height: 153px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.delete-icon {
+  transition: color 0.2s;
+  color: #b3aeae;
+}
+
+.delete-icon:hover {
+  color: white;
+}

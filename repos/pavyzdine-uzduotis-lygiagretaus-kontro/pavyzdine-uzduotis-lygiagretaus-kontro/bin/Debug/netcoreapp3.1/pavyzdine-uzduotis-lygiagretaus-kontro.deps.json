@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "pavyzdine-uzduotis-lygiagretaus-kontro/1.0.0": {
+        "runtime": {
+          "pavyzdine-uzduotis-lygiagretaus-kontro.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "pavyzdine-uzduotis-lygiagretaus-kontro/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

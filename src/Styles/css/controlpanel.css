@@ -1,0 +1,134 @@
+.control-options {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.control-options-lebel-text {
+  font-size: 1.3rem;
+  color: #333;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+.control-options .MuiToggleButton-root.Mui-selected {
+  background: linear-gradient(
+    94deg,
+    rgba(191, 149, 63, 1) 10%,
+    rgba(255, 248, 183, 1) 50%,
+    rgba(191, 149, 63, 1) 90%
+  ) !important;
+  color: #333 !important;
+}
+
+.First-Card {
+  width: 200px;
+  height: 200px;
+  display: block;
+  background-color: red !important;
+}
+
+.toggle-Image {
+  display: flex;
+  justify-content: space-between;
+  width: 100% !important;
+}
+
+.toggle-image-item {
+  width: 23%;
+  height: 100px;
+  border-radius: 20px !important;
+  color: #fff !important;
+}
+
+.im1 {
+  background-image: url("../../Assets/images/card/m1.jpg");
+  background-size: cover;
+}
+
+.im2 {
+  background-image: url("../../Assets/images/card/m2.jpg");
+  background-size: cover;
+}
+
+.im3 {
+  background-image: url("../../Assets/images/card/m3.jpg");
+  background-size: cover;
+}
+
+.im4 {
+  background-image: url("../../Assets/images/card/m4.jpg");
+  background-size: cover;
+}
+
+.im5 {
+  background-image: url("../../Assets/images/card/m5.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.toggle-Image .MuiToggleButton-root.Mui-selected {
+  border: 3px solid #ffbd1b;
+}
+
+.toggle-border {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.border-toggle-item {
+  background-color: #000000 !important ;
+  width: 24%;
+  position: relative;
+  height: 100px;
+  border-radius: 5px !important;
+}
+
+.img-border {
+  width: 100% !important;
+  height: 100%;
+  position: absolute;
+}
+
+.border-price {
+  position: absolute;
+  color: aliceblue;
+}
+
+.toggle-border .MuiToggleButton-root.Mui-selected {
+  border: 3px solid #ffbd1b;
+}
+
+.custom-text {
+  margin-top: 40px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px 40px 40px;
+  align-items: center;
+}
+
+.price div:nth-child(1) {
+  width: 30%;
+}
+
+.extra-fac {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px 10px 20px;
+  width: 100%;
+}
+
+.extra-fac div {
+  width: 20%;
+  text-align: right;
+}
+
+.image-control {
+  padding: 20px;
+}

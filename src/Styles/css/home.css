@@ -1,0 +1,200 @@
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    margin: 0 !important;
+    padding: 0 !important;
+    
+}
+
+.main::before{
+    content: "";
+    background-image: url('../../Assets/images/bg/main.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.9;
+    filter: blur(5px);
+    transform: scale(1.1)
+}
+
+  .d1 {
+    position: absolute;
+    height: 30vh;
+    width: 15vw;
+    background-position: 0 50%;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    animation: dd1 10s 1, dd12 10s 1;
+    animation-delay: 4s, 14s;
+  }
+
+  .d3 {
+    position: absolute;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+    width: 40vw;
+    left: 25vw;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+    background-position: -20vw 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    bottom: 0;
+    animation: dd3 10s 2;
+    animation-delay: 4s;
+  }
+
+  
+  @keyframes dd1 {
+    0% {
+    }
+    50% {
+      width: 95vw;
+    }
+  }
+  @keyframes dd12 {
+    0% {
+    }
+    50% {
+      background-position: Calc(0vw - 40px) 50%;
+    }
+  }
+  @keyframes dd2 {
+    0% {
+    }
+    50% {
+      background-position: Calc(-10vw - 40px) 50%;
+    }
+  }
+  @keyframes dd3 {
+    0% {
+    }
+    50% {
+      background-position: Calc(-35vw - 40px) 50%;
+    }
+  }
+  @keyframes dd4 {
+    0% {
+    }
+    50% {
+      background-position: Calc(-70vw - 40px) 50%;
+    }
+  }
+  
+  .cardNButton{
+    position: absolute;
+    z-index: 100;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .landing-card-container{
+    width: 40%;
+    min-height: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ece8a760;
+    box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%), 0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+    background-size: cover;
+    position: relative;
+    transform: rotate(-10deg);
+    background: linear-gradient(302deg, rgba(223,161,170,1) 0%, rgba(183,110,121,1) 59%) !important; 
+}
+
+
+.card-1{
+    position: absolute;
+    transform: rotate(0deg) !important;
+    background-image: url('../../Assets/images/card/m3.jpg') !important;
+    background-size: cover !important;
+}
+
+
+.landing-chip{
+    width: 50px;
+    height: 50px;
+    background-image: url('../../Assets/images/card/chip.png');
+    background-size: cover;
+    border-radius: 10px;
+    position: absolute;
+    left: 70px;
+    top: 70px;
+}
+
+
+
+.landing-logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.landing-logo div{
+    text-align: center;
+    font-size: 2.4rem;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+
+
+
+
+
+.landing-card-number{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.landing-valid {
+    color: #fff;
+    font-size: .6rem;
+}
+
+
+.home-button{
+    margin-top: 40px;
+}
+
+
+.home-button .MuiButton-label{
+    color: #ffffff !important;
+}
+
+.home-button .MuiButton-outlined{
+    border: 1px solid #ffbd1b !important;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .landing-card-container{
+        width: 98%;
+    }
+}

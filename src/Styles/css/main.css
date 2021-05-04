@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #222222 !important;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+  font-family: "Oswald", sans-serif !important;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+#App {
+  height: 100vh;
+}
+
+.loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: aliceblue;
+}
+
+a {
+  text-decoration: none !important; /* no underline */
+  color: #ffbd1b !important;
+}
+
+a:hover {
+  color: #d19c15 !important;
+}
+
+.confirm-container {
+  max-width: 400px;
+  width: 100%;
+  background: #222222;
+  color: white;
+  border-radius: 11px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.options-group .MuiToggleButton-root.Mui-selected {
+  background: linear-gradient(
+    94deg,
+    rgba(191, 149, 63, 1) 10%,
+    rgba(255, 248, 183, 1) 50%,
+    rgba(191, 149, 63, 1) 90%
+  ) !important;
+  color: #333 !important;
+}
+
+.bg-black {
+  background-color: black !important;
+}
+
+.bm-menu-wrap {
+  top: 0;
+}
