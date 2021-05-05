@@ -4,7 +4,7 @@ const apiUrl =
 export const sendCards = ({
   name,
   provider,
-  numberOnFront,
+  numberPosition,
   email,
   logoText,
   logoTextSize,
@@ -23,7 +23,7 @@ export const sendCards = ({
     body: JSON.stringify({
       name,
       provider,
-      numberOnFront,
+      numberPosition,
       email,
       logoText,
       logoTextSize,
@@ -54,7 +54,9 @@ export const convertImageToSvg = ({ imageUrl }) => {
   const body = {
     imageUrl,
   };
-  return fetch(`https://boiling-depths-34589.herokuapp.com/imageToSvg`, {
+
+  const endPoint = `https://boiling-depths-34589.herokuapp.com/imageToSvg`;
+  return fetch(endPoint, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(body),

@@ -22,10 +22,12 @@ function Order() {
     setButtonVal("Loading...");
     let finalLogo = null;
     if (customCard.logo) {
-      finalLogo = customCard.logo;
-      finalLogo.setAttribute("width", customCard.logoWidth / 5.557);
-      finalLogo.setAttribute("height", customCard.logoHeight / 5.557);
-      finalLogo = finalLogo.outerHTML;
+      const div = document.createElement("div");
+      div.innerHTML = customCard.logo;
+      const svgNode = div.querySelector("svg");
+      svgNode.setAttribute("width", customCard.logoWidth / 5.557);
+      svgNode.setAttribute("height", customCard.logoHeight / 5.557);
+      finalLogo = div.innerHTML;
     }
 
     const response = await sendCards({

@@ -28,6 +28,7 @@ function FrontCard({ data, background, setData }) {
     height: `${data?.logoHeight}px`,
     width: `${data?.logoWidth}px`,
     fontSize: 0,
+    position: "absolute",
   };
 
   return (
@@ -45,8 +46,8 @@ function FrontCard({ data, background, setData }) {
       >
         <div>
           <div>
-            <div id="logo-container" className="position-absolute d-flex" style={imageStyle}></div>
-            <canvas id="logo-canvas" style={{ display: "none" }}></canvas>
+            {/* <div id="logo-container" className="position-absolute d-flex" style={imageStyle}></div> */}
+            <canvas style={imageStyle} id="logo-canvas"></canvas>
           </div>
           {/* <img draggable={false} src={data && data?.logo} style={imageStyle} /> */}
         </div>
