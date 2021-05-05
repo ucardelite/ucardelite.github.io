@@ -1,6 +1,14 @@
 import firebase from "firebase";
 import config from "firebaseConfig.json";
 
-firebase.initializeApp(config);
+firebase.initializeApp({
+  apiKey: "AIzaSyD6TIB0HND4wEjoAbFRdvMMaW60ToOYIdc",
+  authDomain: "cards-12073.firebaseapp.com",
+  databaseURL: "https://cards-12073-default-rtdb.firebaseio.com",
+  projectId: "cards-12073",
+  storageBucket: "cards-12073.appspot.com",
+  messagingSenderId: "175123527897",
+  appId: "1:175123527897:web:79cecfa92a694fa6b326c8",
+});
 
 export default firebase;

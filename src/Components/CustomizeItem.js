@@ -79,7 +79,9 @@ function CustomizeItem({
       const imageUrl = URL.createObjectURL(image);
       const aspectRatio = await getAspectRatio(imageUrl);
       setLoadingImage(true);
-      renderImage(image).then(() => setLoadingImage(false));
+      renderImage(image, (svg) => setState((prev) => ({ ...prev, logo: svg }))).then(() =>
+        setLoadingImage(false)
+      );
       if (aspectRatio > 500 / 300) {
         setState({
           ...state,

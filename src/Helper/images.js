@@ -14,7 +14,7 @@ export const getAspectRatio = (objectUrl) => {
   });
 };
 
-export const renderImage = (image) => {
+export const renderImage = (image, setLogo) => {
   return new Promise(async (resolve, reject) => {
     try {
       const imageUrl = await uploadImage(image);
@@ -29,6 +29,7 @@ export const renderImage = (image) => {
             svgNode.setAttribute("height", "100%");
             svgNode.setAttribute("preserveAspectRatio", "none");
             svgNode.setAttribute("viewBox", `0 0 ${res.width} ${res.height}`);
+            setLogo(svgNode.cloneNode(true));
           }
 
           resolve(true);

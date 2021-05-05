@@ -15,18 +15,34 @@ function Order() {
   const [buttonVal, setButtonVal] = useState("Look up cards");
 
   const handleValue = (value) => {
-    setCustomCard(value);
+    setCustomCard((prev) => ({ ...prev, ...value }));
   };
 
   const handleCardsLookup = async () => {
     setButtonVal("Loading...");
+    let finalLogo = null;
+    if (customCard.logo) {
+      finalLogo = customCard.logo;
+      finalLogo.setAttribute("width", customCard.logoWidth / 5.557);
+      finalLogo.setAttribute("height", customCard.logoHeight / 5.557);
+      finalLogo = finalLogo.outerHTML;
+    }
+
     const response = await sendCards({
       name: customCard.primaryName,
       email,
       provider: customCard.cardNumberType,
-      numberOnFront: customCard.cardNumberPosition === "front",
+      numberPosition: customCard.cardNumberPosition,
       logoText: customCard.customText,
+      logoTextX: customCard.logoTextX,
+      logoTextY: customCard.logoTextY,
       logoTextSize: customCard.textSize,
+      logo: finalLogo,
+      logoX: customCard.logoX,
+      logoY: customCard.logoY,
+      logoWidth: customCard.logoWidth,
+      logoHeight: customCard.logoHeight,
+      border: customCard.borderIndicator ? customCard.borderIndicator.image : null,
     });
     setButtonVal("Email sent!");
     setTimeout(() => {
@@ -60,8 +76,11 @@ function Order() {
             </div>
           </div>
         </div>
-
-        <FrontCard data={customCard} background={activeBackground || { image: M3 }} />
+        <FrontCard
+          setData={(update) => setCustomCard((prev) => ({ ...prev, ...update }))}
+          data={customCard}
+          background={activeBackground || { image: M3 }}
+        />
         <BackCard data={customCard} background={activeBackground || { image: M3 }} />
       </div>
       <div className="col-md-7">

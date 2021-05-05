@@ -3,19 +3,18 @@ import "../Styles/css/card.css";
 import Draggable from "react-draggable";
 import { ReactComponent as VisaIcon } from "Assets/images/card/visa.svg";
 import { ReactComponent as MastercardIcon } from "Assets/images/card/mastercard.svg";
-import { renderImage } from "Helper/images";
 
-function FrontCard({ data, background }) {
+function FrontCard({ data, background, setData }) {
   const [state, setState] = React.useState({
     activeDrags: 0,
   });
 
   const onStart = () => {
-    setState({ activeDrags: ++state.activeDrags });
+    setState((prev) => ({ ...prev, activeDrags: ++state.activeDrags }));
   };
 
   const onStop = () => {
-    setState({ activeDrags: --state.activeDrags });
+    setState((prev) => ({ ...prev, activeDrags: --state.activeDrags }));
   };
 
   const dragHandlers = { onStart: onStart, onStop: onStop };
@@ -26,7 +25,6 @@ function FrontCard({ data, background }) {
   };
 
   let imageStyle = {
-    // objectFit: data?.keepLogoAspectRatio ? "contain" : "unset",
     height: `${data?.logoHeight}px`,
     width: `${data?.logoWidth}px`,
     fontSize: 0,
@@ -39,7 +37,12 @@ function FrontCard({ data, background }) {
           <img src={data.borderIndicator.image} className="position-absolute img-border" />
         </div>
       ) : null}
-      <Draggable {...dragHandlers}>
+      <Draggable
+        onDrag={(e, node) => {
+          setData({ logoX: node.x, logoY: node.y });
+        }}
+        {...dragHandlers}
+      >
         <div>
           <div>
             <div id="logo-container" className="position-absolute d-flex" style={imageStyle}></div>
@@ -49,7 +52,12 @@ function FrontCard({ data, background }) {
         </div>
       </Draggable>
       {data && data.customText && (
-        <Draggable {...dragHandlers}>
+        <Draggable
+          onDrag={(e, node) => {
+            setData({ logoTextX: node.x, logoTextY: node.y });
+          }}
+          {...dragHandlers}
+        >
           <div
             className="d-inline-flex position-absolute text-white"
             style={{ fontSize: `${data.textSize + "px"}`, left: 10, top: 10 }}

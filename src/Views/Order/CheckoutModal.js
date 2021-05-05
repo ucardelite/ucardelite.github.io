@@ -59,7 +59,7 @@ export default function AlertDialogSlide({
         ...vals,
         cardDetails: {
           provider: data.cardNumberType,
-          numberOnFront: data.cardNumberPosition === "front",
+          numberPosition: data.cardNumberPosition,
           logoText: data.customText,
           logoTextSize: data.textSize,
           name: data.primaryName,
